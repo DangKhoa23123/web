@@ -1,0 +1,14 @@
+export interface LoginFormProps {
+    formData: {
+        email: string;
+        password: string;
+    };
+
+    handleChange: (
+        e: React.ChangeEvent<HTMLInputElement>
+    ) => void;
+
+    handleSubmit: (
+        e: React.FormEvent
+    ) => void;
+}
